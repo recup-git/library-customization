@@ -1,27 +1,31 @@
 "use strict";
 
-// this is a sample cache integration using redis instead of the default in-memory cache
+// this is a sample cache integration using redis instead of the default
+// in-memory cache
 const cacheManager = require("cache-manager");
 const redisStore = require("cache-manager-ioredis");
 const log = require("../../server/logger");
 
-// If redis URI found, use redis, otherwise fall back to in memory cache
-const cache = process.env.REDIS_URL
-  ? cacheManager.caching({
-      store: redisStore,
-      host: process.env.REDIS_URL,
-      password: process.env.REDIS_PASS,
-      port: 6379,
-      keyPrefix: "library",
-      db: 0,
-      ttl: 0, // default ttl is infinite
-    })
-  : cacheManager.caching({ store: "memory" });
-
 // if we are using a redis instance, listen for errors
 if (process.env.REDIS_URL) {
+  const uri = new URL(process.env.REDIS_URL);
+
+  // If redis URI found, use redis, otherwise fall back to in memory cache
+  const cache = cacheManager.caching({
+    store: redisStore,
+    host: uri.hostname,
+    password: uri.password,
+    port: uri.port,
+    keyPrefix: "library",
+    db: 0,
+    // TTL is infinite, redis expiration strategy is set at Heroku level
+    ttl: 0,
+  });
+
   const redisClient = cache.store.getClient();
   redisClient.on("error", (err) => log.error("ERROR FROM REDIS CLIENT:", err));
+} else {
+  const cache = cacheManager.caching({ store: "memory" });
 }
 
 module.exports = cache;
