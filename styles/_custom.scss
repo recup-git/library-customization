@@ -23,12 +23,24 @@ h6 {
 
 // `_furniture.scss`
 
-.masthead .container .branding .branding-label {
-  font-weight: 600;
+.masthead .container .branding {
+  .branding-heading .logo {
+    height: 30px;
+  }
+
+  .branding-label {
+    font-weight: 600;
+  }
 }
 
 // `_pages.scss`
 
-#main-search-page .main-item .branding .branding-label {
-  font-weight: 800;
+#main-search-page .main-item .branding {
+  .branding-heading .logo {
+    height: 40px;
+  }
+
+  .branding-label {
+    font-weight: 800;
+  }
 }
