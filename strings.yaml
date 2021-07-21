@@ -2,7 +2,7 @@
 branding:
   favicon: /assets/images/library.ico
   icon: /assets/images/icon-logo.svg
-  name: Bibliothek
+  name: RECUP Bibliothek
   org: RECUP GmbH
   prettyName: RECUP Bibliothek
 
@@ -10,7 +10,7 @@ branding:
 landing:
   tagline: Unser interner Wissensspeicher, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
-  quickLink: <br/><a href="/wie-man-die-bibliothek-benutzt/was-ist-die-bibliothek">Was ist die Bibliothek?</a>
+  quickLink: <br/><a href="/wie-man-die-bibliothek-benutzt/was-ist-die-bibliothek">Lerne hier mehr über die Bibliothek!</a>
   modules:
     - tag: team
       label: Nach Bereich gegliedert
