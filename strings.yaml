@@ -1,26 +1,83 @@
+# base config in partials/branding, partials/head
 branding:
+  favicon: /assets/images/library.ico
+  icon: /assets/images/icon-logo.svg
   name: Bibliothek
   org: RECUP GmbH
-  orgDomain: recup.de
   prettyName: RECUP Bibliothek
-  favicon: /assets/images/library.ico
 
+# pages/categories, pages/index, partials/search
 landing:
   tagline: Unser interner Wissensspeicher, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
-  quickLink: <a href="/wie-man-die-bibliothek-benutzt/was-ist-die-bibliothek">Was ist die Bibliothek?</a>
+  quickLink: <br/><a href="/wie-man-die-bibliothek-benutzt/was-ist-die-bibliothek">Was ist die Bibliothek?</a>
+  modules:
+    - tag: team
+      label: Nach Bereich gegliedert
+      style: button
+    - tag: featured
+      label: First things first
+      style: docs
 
+# partials/footer
 footer:
-  helpText: Für Fragen zur Library oder Bugreports, wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.
+  helpText: Bei technischen Fragen zur Bibliothek oder Bugreports wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.  Für inhaltliche Fragen ist das jeweilige Team zuständig. 🙂
   defaultEmail: dev@recup.de
+  buttons:
+    edit: Seite bearbeiten
+    move: Seite verschieben
+    create: Neue Seite anlegen
+    viewFolder: Ordner anzeigen
 
+# pages/search, partials/search
 search:
   placeholder: Wonach suchst Du?
   results:
+    title: !!js/function (query) => `Suchergebnisse für '${query}'`
+    kicker: !!js/function (query) => `Zeige Ergebnisse für '${query}':`
+    label:
+      folder: !!js/function (path, folder) => `Gespeichert unter <a class="folder" href=${path}><span>${folder}</span></a>`
+      person: !!js/function (lastUser) => `Zuletzt bearbeitet von <span class='author'>${lastUser}`
     none:
+      kicker: !!js/function (query) => `Es gibt keine Suchergebnisse für '${query}'`
       suggestion: Keine Ergebnisse. Möchtest Du <a href="/categories">die Bibliothek-Übersicht ansehen</a>?
+
+# categories/default
+folder:
+  childrenList:
+    kicker: !!js/function (title) => `Seiten unter ${title}`
+  # partials/sectionList
+  sectionList:
+    heading: "Inhaltsverzeichnis:"
+  #partials/siblingList
+  siblingList:
+    heading: Verwandte Dokumente
+
+# playlists/default
+playlist:
+  childrenList:
+    kicker: !!js/function (title) => `${title}-Playlist`
+  siblingList:
+    heading: !!js/function (title) => `${title}-Playlist`
+  nav:
+    previous: '<'
+    next: '>'
 
 # errors
 error:
   403:
-    message: "<p>For this documentation site, we've disabled the final step of the Move File workflow. Normally, this request would succeed and you'd be taken to the new url for your page.</p>"
+    title: Aktion nicht erlaubt
+    heading: Keine Zugriffsberechtigung
+    message: "<p>Die Seite, auf die Du zugreifen wolltest, ist nicht für Dich freigegeben. Bist Du mit dem richtigen RECUP-Account angemeldet?  Wenn nicht, <a href='/login'>melde Dich neu an</a>.</p>"
+  404:
+    title: Seite existiert nicht
+    heading: Hoppla, das ist ein 404.
+    message: Möchtest Du eventuell nach etwas anderem suchen?
+  500:
+    title: Server-Fehler
+    heading: OMG, das ist ein Fehler 500.
+    message: Möchtest Du eventuell nach etwas anderem suchen?
+
+# warning messages
+warning:
+  duplicate: !!js/function (names, folderId) => `Multiple resources in <a href="https://drive.google.com/drive/u/0/folders/${folderId}" target="_blank">this folder</a> share the same name&#58; ${names.join(', ')}. Only one will be accesible through Library.`
