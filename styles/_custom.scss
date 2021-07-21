@@ -2,6 +2,7 @@
 
 body {
   background-color: #f8f8f8;
+  color: #444;
   font-weight: 400;
 }
 
@@ -14,26 +15,14 @@ h6 {
   font-weight: 600;
 }
 
-.button {
-  font-weight: 400;
-
-  .btn-footer {
-    font-weight: 400;
-  }
-}
-
 // `_categories.scss`
 
-.g-upper-body {
-  h1.headline {
-    font-weight: 600;
-  }
+.g-upper-body h1.headline {
+  font-weight: 600;
 }
 
-// `_categories.scss`
+// `_furniture.scss`
 
-.masthead {
-  .branding-label {
-    font-weight: 600;
-  }
+.masthead .container .branding .branding-label {
+  font-weight: 600;
 }
