@@ -1,21 +1,21 @@
 {
-  "name": "library-customization-example",
+  "name": "library-customization",
   "version": "1.0.0",
-  "description": "Sample customizations for your Library instance",
+  "description": "Sample customizations for our Library instance",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nytimes/library-customization-example.git"
+    "url": "git+https://github.com/recup-git/library-customization.git"
   },
-  "author": "The New York Times",
+  "author": "RECUP GmbH",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nytimes/library-customization-example/issues"
+    "url": "https://github.com/recup-git/library-customization/issues"
   },
-  "homepage": "https://github.com/nytimes/library-customization-example#readme",
+  "homepage": "https://github.com/recup-git/library-customization#readme",
   "dependencies": {
-    "cache-manager-ioredis": "^1.0.1",
+    "cache-manager-ioredis": "^2.1.0",
     "express-sslify": "^1.2.0"
   }
 }
