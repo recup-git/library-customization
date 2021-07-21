@@ -1,27 +1,26 @@
 branding:
-  name: About Library 
-  org: The New York Times
-  orgDomain: nytimes.com
-  prettyName: About Library
+  name: Bibliothek
+  org: RECUP GmbH
+  orgDomain: recup.de
+  prettyName: RECUP Bibliothek
   favicon: /assets/images/library.ico
 
 landing:
-  tagline: A simple documentation site, built from content in Google Docs.
-  viewAll: View All Docs
-  quickLink: <a href="/get-started">Get started</a>.
+  tagline: Unser interner Wissensspeicher, erzeugt aus Dokumenten in Google Docs.
+  viewAll: Übersicht anzeigen
+  quickLink: <a href="/wie-man-die-bibliothek-benutzt/was-ist-die-bibliothek">Was ist die Bibliothek?</a>
 
 footer:
-  helpText: For help contributing or to report a problem, consult <a href="https://github.com/nytimes/library">the Library GitHub repository</a>.
-  defaultEmail: test.user@nytimes.com
+  helpText: Für Fragen zur Library oder Bugreports, wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.
+  defaultEmail: dev@recup.de
 
 search:
-  placeholder: What do you want to know about Library?
+  placeholder: Wonach suchst Du?
   results:
     none:
-      suggestion: To request a new page, submit <a href="https://github.com/nytimes/library">a PR on GitHub</a>.
+      suggestion: Keine Ergebnisse. Möchtest Du <a href="/categories">die Bibliothek-Übersicht ansehen</a>?
 
 # errors
 error:
   403:
     message: "<p>For this documentation site, we've disabled the final step of the Move File workflow. Normally, this request would succeed and you'd be taken to the new url for your page.</p>"
-
