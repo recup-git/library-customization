@@ -1,7 +1,7 @@
 # base config in partials/branding, partials/head
 branding:
   favicon: /assets/images/library.ico
-  icon: /custom/public/images/recup_logo_black_rgb.svg
+  icon: /assets/../custom/public/images/recup_logo_black_rgb.svg
   name: RECUP Bibliothek
   org: RECUP GmbH
   prettyName: RECUP Bibliothek
