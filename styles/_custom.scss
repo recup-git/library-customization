@@ -1,0 +1,39 @@
+// `_base.scss`
+
+body {
+  background-color: #f8f8f8;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.button {
+  font-weight: 400;
+
+  .btn-footer {
+    font-weight: 400;
+  }
+}
+
+// `_categories.scss`
+
+.g-upper-body {
+  h1.headline {
+    font-weight: 600;
+  }
+}
+
+// `_categories.scss`
+
+.masthead {
+  .branding-label {
+    font-weight: 600;
+  }
+}
