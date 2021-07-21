@@ -6,10 +6,10 @@ const redisStore = require("cache-manager-ioredis");
 const log = require("../../server/logger");
 
 // If redis URI found, use redis, otherwise fall back to in memory cache
-const cache = process.env.REDIS_URI
+const cache = process.env.REDIS_URL
   ? cacheManager.caching({
       store: redisStore,
-      host: process.env.REDIS_URI,
+      host: process.env.REDIS_URL,
       password: process.env.REDIS_PASS,
       port: 6379,
       keyPrefix: "library",
@@ -19,7 +19,7 @@ const cache = process.env.REDIS_URI
   : cacheManager.caching({ store: "memory" });
 
 // if we are using a redis instance, listen for errors
-if (process.env.REDIS_URI) {
+if (process.env.REDIS_URL) {
   const redisClient = cache.store.getClient();
   redisClient.on("error", (err) => log.error("ERROR FROM REDIS CLIENT:", err));
 }
