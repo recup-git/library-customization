@@ -1,8 +1,19 @@
 {
   "defaultSrc": ["'self'"],
-  "scriptSrc": ["'self'", "'unsafe-inline'", "cdnjs.cloudflare.com"],
+  "scriptSrc": [
+    "'self'",
+    "'unsafe-inline'",
+    "cdnjs.cloudflare.com",
+    "*.google-analytics.com"
+  ],
   "styleSrc": ["'self'", "'unsafe-inline'", "cdnjs.cloudflare.com"],
-  "fontSrc": ["'self'", "data:"],
-  "imgSrc": ["'self'", "data:", "recup.de", "*.googleusercontent.com"],
+  "fontSrc": ["'self'", "data:", "cdnjs.cloudflare.com"],
+  "imgSrc": [
+    "'self'",
+    "data:",
+    "recup.de",
+    "*.googleusercontent.com",
+    "*.google-analytics.com"
+  ],
   "objectSrc": ["'none'"]
 }
