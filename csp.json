@@ -11,6 +11,7 @@
     "'unsafe-inline'",
     "fonts.googleapis.com",
     "maxcdn.bootstrapcdn.com",
+    "cdnjs.cloudflare.com",
     "*.googleusercontent.com"
   ],
   "fontSrc": [
