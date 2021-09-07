@@ -8,7 +8,7 @@ branding:
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: Unser interner Wissensspeicher, erzeugt aus Dokumenten in Google Docs.
+  tagline: Unser interner Wegweiser, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
   quickLink: <br/><a href="/lerne-unsere-bibliothek-kennen">Lerne hier mehr über die Bibliothek!</a>
   modules:
