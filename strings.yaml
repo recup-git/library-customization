@@ -2,15 +2,15 @@
 branding:
   favicon: /assets/images/library.ico
   icon: https://recup.de/wp-content/uploads/2020/11/recup_logo_black_rgb.svg
-  name: RECUP Bibliothek
+  name: Kompass
   org: RECUP GmbH
-  prettyName: RECUP Bibliothek
+  prettyName: Kompass
 
 # pages/categories, pages/index, partials/search
 landing:
   tagline: Unser interner Wegweiser, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
-  quickLink: <br/><a href="/lerne-unsere-bibliothek-kennen">Lerne hier mehr über die Bibliothek!</a>
+  quickLink: <br/><a href="/lerne-unsere-bibliothek-kennen">Lerne hier mehr über den Kompass.</a>
   modules:
     - tag: team
       label: Nach Bereich gegliedert
@@ -21,7 +21,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Bei technischen Fragen zur Bibliothek oder Bugreports wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.  Für inhaltliche Fragen ist das jeweilige Team zuständig. 🙂
+  helpText: Bei technischen Fragen zum Kompass oder Bugreports wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.  Für inhaltliche Fragen ist das jeweilige Team zuständig. 🙂
   defaultEmail: dev@recup.de
   buttons:
     edit: Seite bearbeiten
