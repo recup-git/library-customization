@@ -49,26 +49,85 @@ h6 {
 
 .g-upper-body {
   .branding {
-    .branding-heading .logo {
-      height: 40px;
-    }
-
-    .branding-label {
-      font-weight: 800;
-    }
-
     align-content: center;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+
+    .branding-heading {
+      margin: 0;
+
+      .logo {
+        height: 40px;
+        padding-top: 9px;
+
+        @include tablet {
+          height: 36px;
+        }
+
+        @include desktop {
+          height: 36px;
+        }
+      }
+    }
+
+    .branding-label {
+      -webkit-font-smoothing: antialiased;
+      border-left: 1px solid $main-homepage-icon-border;
+      color: $main-homepage-icon-color;
+      font-family: $font-branding;
+      font-size: 28px;
+      font-weight: 800;
+      height: 21px;
+      line-height: 21px;
+      margin: 0 0 0 15px;
+      padding: 10px 0 10px 15px;
+      text-transform: none;
+      vertical-align: top;
+
+      @include tablet {
+        font-size: 38px;
+        height: 30px;
+        line-height: 26px;
+        padding: 15px 0 9px 18px;
+      }
+
+      @include desktop {
+        font-size: 38px;
+        height: 30px;
+        line-height: 26px;
+        padding: 15px 0 10px 20px;
+      }
+
+      a:link,
+      a:visited {
+        color: $gray-50;
+      }
+      a:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
   }
 
   .tagline {
-    color: #8e8e8e;
-    font-size: 15px;
+    color: $main-page-text-color;
+    font-size: 14px;
     line-height: 21px;
-    margin: 0 auto 10vh auto;
+    margin-bottom: 60px;
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+
+    @include tablet {
+      font-size: 15px;
+      margin-bottom: 10vh;
+      width: 100%;
+    }
+
+    @include desktop {
+      font-size: 15px;
+      margin-bottom: 10vh;
+      width: 100%;
+    }
   }
 }
