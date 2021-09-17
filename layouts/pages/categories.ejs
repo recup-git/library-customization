@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head', {title: template('landing.viewAll')}) %>
+  <body>
+    <%- include('partials/header', {parentLinks: [], title: template('landing.viewAll')}) %>
+
+    <div class="g-upper-body">
+      <%- include('partials/branding', {context: 'home'}) %>
+      <div class="tagline">
+        <p><%- template('landing.tagline') %> <%- template('landing.quickLink') %></p>
+      </div>
+      <%- include('partials/nav') %>
+    </div>
+
+    <div id="category-page" class="g-body">
+      <div class="g-main-content">
+      <% all.forEach((category) => { %>
+        <%- include('partials/childrenList', {kicker: category.prettyName, children: category.children, link: category.path}) %>
+      <% }) %>
+      </div>
+      <script> seeMoreButton() </script>
+      <%- include('partials/footer', { pageType: 'category_index' }) %>
+    </div>
+  </body>
+</html>
