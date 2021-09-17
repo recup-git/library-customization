@@ -49,26 +49,10 @@ h6 {
 
 .g-upper-body {
   .branding {
-    .branding-heading .logo {
-      height: 40px;
-    }
-
-    .branding-label {
-      font-weight: 800;
-    }
-
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    @extend #main-search-page .main-item .branding;
   }
 
   .tagline {
-    color: #8e8e8e;
-    font-size: 15px;
-    line-height: 21px;
-    margin: 0 auto 10vh auto;
-    text-align: center;
-    width: 100%;
+    @extend #main-search-page .main-item .tagline;
   }
 }
