@@ -40,7 +40,7 @@ search:
       person: !!js/function (lastUser) => `Zuletzt bearbeitet von <span class='author'>${lastUser}`
     none:
       kicker: !!js/function (query) => `Es gibt keine Suchergebnisse für '${query}'`
-      suggestion: Keine Ergebnisse. Möchtest Du <a href="/categories">die Bibliothek-Übersicht ansehen</a>?
+      suggestion: Keine Ergebnisse. Möchtest Du <a href="/categories">die Kompass-Übersicht ansehen</a>?
 
 # categories/default
 folder:
