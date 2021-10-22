@@ -1,6 +1,6 @@
 # base config in partials/branding, partials/head
 branding:
-  favicon: /assets/images/library.ico
+  favicon: https://raw.githubusercontent.com/recup-git/library-customization/master/recup_kompass.ico
   icon: https://recup.de/wp-content/uploads/2020/11/recup_logo_black_rgb.svg
   name: Kompass
   org: RECUP GmbH
