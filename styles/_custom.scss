@@ -45,6 +45,12 @@ h6 {
   }
 }
 
+// Bullet points
+
+li:before {
+  content: "▪︎ " !important;
+}
+
 // Categories-Seite
 
 .g-upper-body {
