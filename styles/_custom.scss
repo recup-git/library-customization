@@ -21,6 +21,25 @@ h6 {
   font-weight: 600;
 }
 
+.g-body .playlist-navigation ul,
+.g-body .playlist-navigation ol,
+.g-body .g-main-content ul,
+.g-body .g-main-content ol {
+  margin-bottom: 1em;
+}
+
+.g-body .playlist-navigation > p + p,
+.g-body .g-main-content > p + p {
+  margin-bottom: 1em;
+}
+
+.g-body .playlist-navigation ul li,
+.g-body .playlist-navigation ol li,
+.g-body .g-main-content ul li,
+.g-body .g-main-content ol li {
+  margin-bottom: 0.5em;
+}
+
 // `_furniture.scss`
 
 .masthead .container .branding {
