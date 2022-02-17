@@ -21,20 +21,16 @@ h6 {
   font-weight: 600;
 }
 
+.g-body .playlist-navigation > p,
+.g-body .g-main-content > p {
+  margin: 0 0 1em 0;
+}
+
 .g-body .playlist-navigation ul,
 .g-body .playlist-navigation ol,
 .g-body .g-main-content ul,
 .g-body .g-main-content ol {
-  margin-bottom: 1em;
-}
-
-.g-body .playlist-navigation > p + p,
-.g-body .playlist-navigation > p + ol,
-.g-body .playlist-navigation > p + ul,
-.g-body .g-main-content > p + p,
-.g-body .g-main-content > p + ol,
-.g-body .g-main-content > p + ul {
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 
 .g-body .playlist-navigation ul.start li,
