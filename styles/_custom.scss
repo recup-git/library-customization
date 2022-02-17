@@ -64,9 +64,9 @@ h6 {
   }
 }
 
-// Bullet points
+// Bullet points in main area
 
-li:before {
+.g-main-content li:before {
   content: "▪︎ " !important;
 }
 
