@@ -29,14 +29,18 @@ h6 {
 }
 
 .g-body .playlist-navigation > p + p,
-.g-body .g-main-content > p + p {
+.g-body .playlist-navigation > p + ol,
+.g-body .playlist-navigation > p + ul,
+.g-body .g-main-content > p + p,
+.g-body .g-main-content > p + ol,
+.g-body .g-main-content > p + ul {
   margin-bottom: 1em;
 }
 
-.g-body .playlist-navigation ul li,
-.g-body .playlist-navigation ol li,
-.g-body .g-main-content ul li,
-.g-body .g-main-content ol li {
+.g-body .playlist-navigation ul.start li,
+.g-body .playlist-navigation ol.start li,
+.g-body .g-main-content ul.start li,
+.g-body .g-main-content ol.start li {
   margin-bottom: 0.5em;
 }
 
