@@ -26,6 +26,11 @@ h6 {
   margin: 0 0 1em 0;
 }
 
+.g-body .playlist-navigation > p:empty,
+.g-body .g-main-content > p:empty {
+  height: 0;
+}
+
 .g-body .playlist-navigation ul,
 .g-body .playlist-navigation ol,
 .g-body .g-main-content ul,
