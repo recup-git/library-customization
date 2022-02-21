@@ -17,6 +17,19 @@ h6 {
 
 // `_categories.scss`
 
+.g-body .playlist-navigation p,
+.g-body .playlist-navigation ul,
+.g-body .playlist-navigation li,
+.g-body .playlist-navigation dt,
+.g-body .playlist-navigation dd,
+.g-body .g-main-content p,
+.g-body .g-main-content ul,
+.g-body .g-main-content li,
+.g-body .g-main-content dt,
+.g-body .g-main-content dd {
+  font-weight: 400;
+}
+
 .g-upper-body h1.headline {
   font-weight: 600;
 }
