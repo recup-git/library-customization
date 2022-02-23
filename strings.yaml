@@ -10,7 +10,7 @@ branding:
 landing:
   tagline: Unser interner Wegweiser, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
-  quickLink: <br/><a href="/system-bersicht/was-ist-der-kompass">Lerne hier mehr über den Kompass.</a>
+  quickLink: <br/><a href="/systemubersicht/systeme-und-tools/kompass">Lerne hier mehr über den Kompass.</a>
   modules:
     - tag: team
       label: Nach Bereich gegliedert
@@ -21,7 +21,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Bei technischen Fragen zum Kompass oder Bugreports wende Dich bitte an das <a href="/operations/team-internal-dev-it">Team ID/IT</a>.  Für inhaltliche Fragen ist das jeweilige Team zuständig. 🙂
+  helpText: Bei technischen Fragen zum Kompass oder Bugreports wende Dich bitte an das <a href="/it-software-development">Team ID/IT</a>.  Für inhaltliche Fragen ist das jeweilige Team zuständig. 🙂
   defaultEmail: dev@recup.de
   buttons:
     edit: Seite bearbeiten
