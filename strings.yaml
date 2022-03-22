@@ -1,7 +1,7 @@
 # base config in partials/branding, partials/head
 branding:
-  favicon: /public/images/favicon.ico
-  icon: /public/images/recup_logo_black_rgb.svg
+  favicon: /assets/images/favicon.ico
+  icon: /assets/images/recup_logo_black_rgb.svg
   name: Kompass
   org: RECUP GmbH
   prettyName: Kompass
