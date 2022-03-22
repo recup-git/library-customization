@@ -1,7 +1,7 @@
 # base config in partials/branding, partials/head
 branding:
-  favicon: https://raw.githubusercontent.com/recup-git/library-customization/master/recup_kompass.ico
-  icon: https://recup.de/wp-content/uploads/2020/11/recup_logo_black_rgb.svg
+  favicon: /public/images/favicon.ico
+  icon: /public/images/recup_logo_black_rgb.svg
   name: Kompass
   org: RECUP GmbH
   prettyName: Kompass
@@ -10,7 +10,7 @@ branding:
 landing:
   tagline: Unser interner Wegweiser, erzeugt aus Dokumenten in Google Docs.
   viewAll: Übersicht anzeigen
-  quickLink: <br/><a href="/systemubersicht/systeme-und-tools/kompass">Lerne hier mehr über den Kompass.</a>
+  quickLink: <br/><a href="/systemubersicht">Lerne hier mehr über den Kompass.</a>
   modules:
     - tag: team
       label: Nach Bereich gegliedert
